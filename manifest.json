@@ -1,8 +1,8 @@
 {
-  "name": "KARAK-WA-KARAK",
-  "short_name": "KARAK Menu",
-  "start_url": "/KARAK-WA-KARAK/index.html",
-  "scope": "/KARAK-WA-KARAK/",
+  "name": "usthad azeezia menu",
+  "short_name": "usthad azeezia menu",
+  "start_url": "/usthad-azeezia-menu/index.html",
+  "scope": "/usthad-azeezia-menu/",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#ef4444",
