@@ -760,20 +760,17 @@
         let currentLang = 'en'; 
         let langSetup = 'English&Arabic'; 
         let globalCurrency = ""; 
-        const newRiyalIcon = `<svg class="inline-block w-[0.8em] h-[0.8em] mx-0.5 fill-current" viewBox="0 0 202.03 220.76" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M3.62,190.51c1.85-3.4,4.63-11.11,8.33-12.04l62.35-13.27v-30.87l-63.28,13.58c-1.23,0,3.09-13.27,3.4-13.89,1.54-3.4,4.32-11.11,8.03-12.04l51.86-11.11V20.42c0-4.94,8.64-11.73,11.42-14.51.93-.62,9.88-8.64,9.88-4.94v105.57l24.69-5.56V31.84c0-4.94,8.64-11.73,11.73-14.2.62-.93,9.57-8.64,9.57-5.25v84.27l58.34-12.35h.31l1.23-.31c.93-.31-3.09,12.96-3.7,13.89-1.54,3.09-4.32,11.11-8.03,11.73l-48.15,10.5v24.39l60.19-12.66c1.23-.31-2.78,13.27-3.4,13.89-1.54,3.4-4.32,11.11-8.03,12.04l-68.53,14.82c-.93,0-1.54,0-1.54-1.23v-46.61l-24.69,5.25v31.79c0,6.79-13.27,25-20.06,26.86v-.31L.22,204.4c-1.23.31,3.09-12.96,3.4-13.89ZM196.55,194.83c-1.54,3.09-4.32,11.11-8.33,12.04l-68.84,13.89c-.93.31,3.09-12.96,3.7-13.89,1.54-3.4,4.32-11.11,8.03-12.04l68.84-13.89c1.54-.31-3.09,12.96-3.4,13.89Z"/></svg>`;
+        const newRiyalIcon = `<svg class="inline-block w-[0.6em] h-[0.7em] fill-current" viewBox="0 0 202.03 220.76" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor"
+d="M3.62,190.51c1.85-3.4,4.63-11.11,8.33-12.04l62.35-13.27v-30.87l-63.28,13.58c-1.23,0,3.09-13.27,3.4-13.89,1.54-3.4,4.32-11.11,8.03-12.04l51.86-11.11V20.42c0-4.94,8.64-11.73,11.42-14.51.93-.62,9.88-8.64,9.88-4.94v105.57l24.69-5.56V31.84c0-4.94,8.64-11.73,11.73-14.2.62-.93,9.57-8.64,9.57-5.25v84.27l58.34-12.35h.31l1.23-.31c.93-.31-3.09,12.96-3.7,13.89-1.54,3.09-4.32,11.11-8.03,11.73l-48.15,10.5v24.39l60.19-12.66c1.23-.31-2.78,13.27-3.4,13.89-1.54,3.4-4.32,11.11-8.03,12.04l-68.53,14.82c-.93,0-1.54,0-1.54-1.23v-46.61l-24.69,5.25v31.79c0,6.79-13.27,25-20.06,26.86v-.31L.22,204.4c-1.23.31,3.09-12.96,3.4-13.89ZM196.55,194.83c-1.54,3.09-4.32,11.11-8.33,12.04l-68.84,13.89c-.93.31,3.09-12.96,3.7-13.89,1.54-3.4,4.32-11.11,8.03-12.04l68.84-13.89c1.54-.31-3.09,12.96-3.4,13.89Z"/></svg>`;
 
         // Cleaned up: We will just use the custom SVG for Dirham, and crisp text for SR
-        const newDirhamIcon = `<svg class="inline-block w-[0.8em] h-[0.8em] mx-0.5 fill-current" viewBox="0 0 344.84 299.91" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M342.14,140.96l2.7,2.54v-7.72c0-17-11.92-30.84-26.56-30.84h-23.41C278.49,36.7,222.69,0,139.68,0c-52.86,0-59.65,0-109.71,0,0,0,15.03,12.63,15.03,52.4v52.58h-27.68c-5.38,0-10.43-2.08-14.61-6.01l-2.7-2.54v7.72c0,17.01,11.92,30.84,26.56,30.84h18.44s0,29.99,0,29.99h-27.68c-5.38,0-10.43-2.07-14.61-6.01l-2.7-2.54v7.71c0,17,11.92,30.82,26.56,30.82h18.44s0,54.89,0,54.89c0,38.65-15.03,50.06-15.03,50.06h109.71c85.62,0,139.64-36.96,155.38-104.98h32.46c5.38,0,10.43,2.07,14.61,6l2.7,2.54v-7.71c0-17-11.92-30.83-26.56-30.83h-18.9c.32-4.88.49-9.87.49-15s-.18-10.11-.51-14.99h28.17c5.37,0,10.43,2.07,14.61,6.01ZM89.96,15.01h45.86c61.7,0,97.44,27.33,108.1,89.94l-153.96.02V15.01ZM136.21,284.93h-46.26v-89.98l153.87-.02c-9.97,56.66-42.07,88.38-107.61,90ZM247.34,149.96c0,5.13-.11,10.13-.34,14.99l-157.04.02v-29.99l157.05-.02c.22,4.84.33,9.83.33,15Z"/></svg>`;
+        const newDirhamIcon = `<svg class="inline-block w-[0.9em] h-[0.9em] fill-current" viewBox="0 0 344.84 299.91" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor"
+d="M342.14,140.96l2.7,2.54v-7.72c0-17-11.92-30.84-26.56-30.84h-23.41C278.49,36.7,222.69,0,139.68,0c-52.86,0-59.65,0-109.71,0,0,0,15.03,12.63,15.03,52.4v52.58h-27.68c-5.38,0-10.43-2.08-14.61-6.01l-2.7-2.54v7.72c0,17.01,11.92,30.84,26.56,30.84h18.44s0,29.99,0,29.99h-27.68c-5.38,0-10.43-2.07-14.61-6.01l-2.7-2.54v7.71c0,17,11.92,30.82,26.56,30.82h18.44s0,54.89,0,54.89c0,38.65-15.03,50.06-15.03,50.06h109.71c85.62,0,139.64-36.96,155.38-104.98h32.46c5.38,0,10.43,2.07,14.61,6l2.7,2.54v-7.71c0-17-11.92-30.83-26.56-30.83h-18.9c.32-4.88.49-9.87.49-15s-.18-10.11-.51-14.99h28.17c5.37,0,10.43,2.07,14.61,6.01ZM89.96,15.01h45.86c61.7,0,97.44,27.33,108.1,89.94l-153.96.02V15.01ZM136.21,284.93h-46.26v-89.98l153.87-.02c-9.97,56.66-42.07,88.38-107.61,90ZM247.34,149.96c0,5.13-.11,10.13-.34,14.99l-157.04.02v-29.99l157.05-.02c.22,4.84.33,9.83.33,15Z"/></svg>`;
 
         function getSmartCurrency(currStr, customClass = "") {
             const c = String(currStr).trim().toLowerCase();
-            
-            // FIX: Now uses your beautiful new SR SVG instead of the text "SR"!
-            // Wrapped in a span so it automatically inherits your red/gray text colors
-            if (c === 'sr' || c === 'sar') return `<span class="${customClass}">${newRiyalIcon}</span>`; 
-            
-            if (c === 'aed' || c === 'dhs' || c === 'dirham') return `<span class="${customClass}">${newDirhamIcon}</span>`; 
-            
+            if (c === 'sr' || c === 'sar') return `<span class="${customClass} flex items-center">${newRiyalIcon}</span>`; 
+            if (c === 'aed' || c === 'dhs' || c === 'dirham') return `<span class="${customClass} flex items-center">${newDirhamIcon}</span>`; 
             if (c === 'dollar' || c === 'usd') return `<span class="${customClass}">$</span>`;
             if (c === 'euro' || c === 'eur') return `<span class="${customClass}">€</span>`;
             if (c === 'pound' || c === 'gbp') return `<span class="${customClass}">£</span>`;
@@ -1626,13 +1623,13 @@ function renderQuickAccessFilters() {
                 card.className = cardClasses; card.style.animation = `fadeInUp 0.4s ease forwards ${delay}ms`;
                 card.onclick = () => openModal(item.id);
 
-                let cardCurrencyDisplay = getSmartCurrency(globalCurrency, "text-[10px] sm:text-xs font-normal mx-0.5 text-gray-500");
+                let cardCurrencyDisplay = getSmartCurrency(globalCurrency, "opacity-70");
                 
-                // NEW: Show "Starts at" if it's a variable item
+                // NEW: Show "Starts at" if it's a variable item, with dynamically scaling icons
                 const pricePrefix = item.isVariable ? (currentLang === 'en' ? 'from ' : 'يبدأ من ') : '';
                 const priceHtml = currentLang === 'en' 
-                    ? `<span class="flex items-baseline text-[9px] sm:text-[10px] text-gray-400 font-normal mr-1">${pricePrefix}</span><span class="flex items-baseline">${cardCurrencyDisplay}<span>${item.price}</span></span>` 
-                    : `<span class="flex items-baseline text-[9px] sm:text-[10px] text-gray-400 font-normal ml-1">${pricePrefix}</span><span class="flex items-baseline"><span>${item.price}</span>${cardCurrencyDisplay}</span>`;
+                    ? `<span class="flex items-center text-[9px] sm:text-[10px] text-gray-400 font-normal mr-1">${pricePrefix}</span><span class="flex items-center gap-1">${cardCurrencyDisplay}<span>${item.price}</span></span>` 
+                    : `<span class="flex items-center text-[9px] sm:text-[10px] text-gray-400 font-normal ml-1">${pricePrefix}</span><span class="flex items-center gap-1"><span>${item.price}</span>${cardCurrencyDisplay}</span>`;
 
                 let badgeHtml = '';
                 const imgFilter = item.isOutOfStock ? 'opacity-60 grayscale' : '';
@@ -1738,7 +1735,8 @@ function renderQuickAccessFilters() {
             const delCharge = rawBranding.smartDelivery ? `${rawBranding.smartDelivery}` : 'Free';
             document.getElementById('modalDeliveryText').textContent = `${t.deliveryPrefix} ${delCharge}`;
 
-            let modalCurrencyDisplay = getSmartCurrency(globalCurrency, "text-sm md:text-base font-normal mx-1 text-red-400");
+            // FIX: Removed fixed text sizes so it completely inherits whatever size we put it in!
+            let modalCurrencyDisplay = getSmartCurrency(globalCurrency, "opacity-80");
             
             // NEW: Variant Selection Logic
             const variantArea = document.getElementById('modalVariantArea');
@@ -1752,43 +1750,41 @@ function renderQuickAccessFilters() {
                 item.variants.forEach((v, idx) => {
                     const isSelected = idx === 0;
                     const btn = document.createElement('button');
-                    btn.className = `variant-btn px-4 py-2 rounded-xl border-2 text-sm font-bold transition-all ${isSelected ? 'border-red-500 bg-red-50 text-red-600' : 'border-gray-200 bg-white text-gray-600 hover:border-red-300'}`;
-                    btn.innerHTML = `${v.variantName} - <span class="font-extrabold ml-1">${v.price} ${modalCurrencyDisplay.replace(/<[^>]*>?/gm, '')}</span>`;
+                    btn.className = `variant-btn px-4 py-2 rounded-xl border-2 text-sm font-bold transition-all flex items-center justify-center gap-1.5 ${isSelected ? 'border-red-500 bg-red-50 text-red-600' : 'border-gray-200 bg-white text-gray-600 hover:border-red-300'}`;
+                    btn.innerHTML = `<span>${v.variantName}</span> <span class="font-extrabold flex items-center gap-1 ml-1">${v.price} ${modalCurrencyDisplay}</span>`;
                     
                     btn.onclick = () => {
-                        document.querySelectorAll('.variant-btn').forEach(b => b.className = 'variant-btn px-4 py-2 rounded-xl border-2 border-gray-200 bg-white text-gray-600 text-sm font-bold transition-all hover:border-red-300');
-                        btn.className = 'variant-btn px-4 py-2 rounded-xl border-2 border-red-500 bg-red-50 text-red-600 text-sm font-bold transition-all';
+                        document.querySelectorAll('.variant-btn').forEach(b => b.className = 'variant-btn px-4 py-2 rounded-xl border-2 border-gray-200 bg-white text-gray-600 text-sm font-bold transition-all hover:border-red-300 flex items-center justify-center gap-1.5');
+                        btn.className = 'variant-btn px-4 py-2 rounded-xl border-2 border-red-500 bg-red-50 text-red-600 text-sm font-bold transition-all flex items-center justify-center gap-1.5';
                         
+                        // Wrap both the SVG and price in the HUGE text-3xl class so they stay perfect
                         const updatedPriceHtml = currentLang === 'en' 
-                            ? `<span class="text-red-400 flex items-baseline justify-end">${modalCurrencyDisplay}<span class="text-3xl text-red-500">${v.price}</span></span>` 
-                            : `<span class="text-red-400 flex items-baseline justify-end"><span class="text-3xl text-red-500">${v.price}</span>${modalCurrencyDisplay}</span>`;
+                            ? `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5"><span class="text-red-400">${modalCurrencyDisplay}</span> ${v.price}</span>` 
+                            : `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5">${v.price} <span class="text-red-400">${modalCurrencyDisplay}</span></span>`;
                         document.getElementById('modalPrice').innerHTML = updatedPriceHtml;
                         
                         document.getElementById('productModal').setAttribute('data-selected-variant', v.variantName);
                         document.getElementById('productModal').setAttribute('data-selected-price', v.price);
                         
-                        // NEW: Force the Add to Cart button to check if this specific size is already in the cart
                         updateQuickAddButtons(); 
                     };
                     variantOptions.appendChild(btn);
                 });
-                // Default to first variant
+                
                 document.getElementById('productModal').setAttribute('data-selected-variant', item.variants[0].variantName);
                 document.getElementById('productModal').setAttribute('data-selected-price', item.variants[0].price);
                 
-                // Show default price
                 document.getElementById('modalPrice').innerHTML = currentLang === 'en' 
-                    ? `<span class="text-red-400 flex items-baseline justify-end">${modalCurrencyDisplay}<span class="text-3xl text-red-500">${item.variants[0].price}</span></span>` 
-                    : `<span class="text-red-400 flex items-baseline justify-end"><span class="text-3xl text-red-500">${item.variants[0].price}</span>${modalCurrencyDisplay}</span>`;
+                    ? `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5"><span class="text-red-400">${modalCurrencyDisplay}</span> ${item.variants[0].price}</span>` 
+                    : `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5">${item.variants[0].price} <span class="text-red-400">${modalCurrencyDisplay}</span></span>`;
             } else {
                 variantArea.classList.add('hidden');
                 document.getElementById('productModal').removeAttribute('data-selected-variant');
                 document.getElementById('productModal').removeAttribute('data-selected-price');
                 
-                // Standard price
                 document.getElementById('modalPrice').innerHTML = currentLang === 'en' 
-                    ? `<span class="text-red-400 flex items-baseline justify-end">${modalCurrencyDisplay}<span class="text-3xl text-red-500">${item.price}</span></span>` 
-                    : `<span class="text-red-400 flex items-baseline justify-end"><span class="text-3xl text-red-500">${item.price}</span>${modalCurrencyDisplay}</span>`;
+                    ? `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5"><span class="text-red-400">${modalCurrencyDisplay}</span> ${item.price}</span>` 
+                    : `<span class="text-3xl text-red-500 font-black flex items-center justify-end gap-1.5">${item.price} <span class="text-red-400">${modalCurrencyDisplay}</span></span>`;
             }
             
 
@@ -1884,7 +1880,7 @@ function renderQuickAccessFilters() {
                                     <h4 class="text-[10px] font-bold ${textColor} line-clamp-1 pointer-events-none">${relItem.name}</h4>
                                 </div>
                                 <div class="flex justify-between items-center mt-1 pointer-events-none">
-                                    <p class="text-[10px] ${priceColor} font-bold flex items-baseline gap-1">${getSmartCurrency(globalCurrency, '')} <span>${relItem.price}</span></p>
+                                    <p class="text-[10px] ${priceColor} font-bold flex items-center gap-1">${getSmartCurrency(globalCurrency, 'opacity-80')} <span>${relItem.price}</span></p>
                                     <button type="button" onclick="${clickAction}" class="quick-add-btn-${relItem.id} bg-orange-500 text-white w-5 h-5 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition-colors pointer-events-auto z-10 relative">
                                         <i class="quick-add-icon-${relItem.id} fas fa-plus text-[8px] transition-transform duration-500 pointer-events-none"></i>
                                     </button>
@@ -2242,7 +2238,7 @@ function renderQuickAccessFilters() {
 
                         <div class="flex-grow min-w-0">
                             <h4 class="font-bold text-gray-800 text-xs leading-tight truncate">${item.name} ${variantBadge}</h4>
-                            <div class="text-[10px] text-gray-500 mt-0.5 flex items-baseline gap-1">${getSmartCurrency(globalCurrency, '')} <span>${itemPrice.toFixed(2)}</span> <span>x ${item.qty}</span></div>
+                            <div class="text-[10px] text-gray-500 mt-0.5 flex items-center gap-1">${getSmartCurrency(globalCurrency, 'opacity-80')} <span>${itemPrice.toFixed(2)}</span> <span>x ${item.qty}</span></div>
                         </div>
                         <div class="flex flex-col items-end gap-1 shrink-0">
                             <span class="font-bold text-red-600 text-xs">${itemTotal.toFixed(2)}</span>
