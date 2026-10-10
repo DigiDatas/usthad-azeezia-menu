@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karak Wa Karak Menu</title>
+    <title>usthad-azeezia-menu</title>
   <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ef4444">
     <link rel="apple-touch-icon" href="logo.png">
@@ -768,10 +768,11 @@
         function getSmartCurrency(currStr, customClass = "") {
             const c = String(currStr).trim().toLowerCase();
             
-            // NEW: Distinct text layout for Saudi Riyal so it doesn't duplicate the Dirham icon
-            if (c === 'sr' || c === 'sar') return `<span class="${customClass} font-extrabold tracking-tighter">SR</span>`; 
+            // FIX: Now uses your beautiful new SR SVG instead of the text "SR"!
+            // Wrapped in a span so it automatically inherits your red/gray text colors
+            if (c === 'sr' || c === 'sar') return `<span class="${customClass}">${newRiyalIcon}</span>`; 
             
-            if (c === 'aed' || c === 'dhs' || c === 'dirham') return newDirhamIcon; 
+            if (c === 'aed' || c === 'dhs' || c === 'dirham') return `<span class="${customClass}">${newDirhamIcon}</span>`; 
             
             if (c === 'dollar' || c === 'usd') return `<span class="${customClass}">$</span>`;
             if (c === 'euro' || c === 'eur') return `<span class="${customClass}">€</span>`;
